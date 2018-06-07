@@ -155,17 +155,17 @@ architecture behave of deGhost_RGB_8x4 is
   signal BLU_right_deGhost : signed (17 downto 0) ;
   --
   signal edg_horz_SR    : std_logic_vector (3 downto 0) ;
-  signal pixel_cntr     : unsigned (11 downto 0) ;
-  signal horz_zone_trgt : unsigned (11 downto 0) ;
-  signal horz_zone_cntr : unsigned (8 downto 0)  ;
+  signal pixel_cntr     : unsigned (12 downto 0) ;
+  signal horz_zone_trgt : unsigned (12 downto 0) ;
+  signal horz_zone_cntr : unsigned (12 downto 0)  ;
   signal early_ZCcntr_rst : std_logic ;
   signal ZCcntr_rst       : std_logic ;
   signal zone_column    : std_logic_vector (2 downto 0) ;
   signal horz_rise      : std_logic ; -- rising edge
   signal edg_vert_SR    : std_logic_vector (3 downto 0) ;
-  signal line_cntr      : unsigned (11 downto 0) ;
-  signal vert_zone_trgt : unsigned (11 downto 0) ;
-  signal vert_zone_cntr : unsigned (8 downto 0)  ;
+  signal line_cntr      : unsigned (12 downto 0) ;
+  signal vert_zone_trgt : unsigned (12 downto 0) ;
+  signal vert_zone_cntr : unsigned (12 downto 0)  ;
   signal ZRcntr_rst     : std_logic ;
   signal zone_row       : std_logic_vector (1 downto 0) ;
   signal vert_rise      : std_logic ; -- rising edge

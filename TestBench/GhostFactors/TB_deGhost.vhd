@@ -371,7 +371,7 @@ begin
 		write(l_out,string'("BLU Right Calc GF ,")) ;
 		write(l_out,string'("BLU Left Calc GF ,")) ;
 		writeline(results_file,l_out) ;
-	elsif (PixelInputValid'event and PixelInputValid = '0') then
+	elsif (PixelInputValid'event and PixelInputValid = '0' and reset_H = '0') then
 		file_close(results_file) ;
 	end if ;
 	--
